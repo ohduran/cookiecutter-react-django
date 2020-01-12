@@ -30,6 +30,10 @@ Instead, we can do as follows. First, get Cookiecutter. Trust me, it's awesome:
 
 ```$ pip install "cookiecutter>=1.7.0" ```
 
+Now run it against this repo:
+
+```$ cookiecutter https://github.com/ohduran/cookiecutter-react-django```
+
 You'll be prompted for some values. Provide them, then the project will be created for you.
 
 ### Deploy to Heroku
