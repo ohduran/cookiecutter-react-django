@@ -5,8 +5,8 @@ FROM python:3.8.1
 WORKDIR /app/backend
 
 # Install Python dependencies
-COPY requirements.txt /app/backend
-RUN pip install -r requirements.txt
+COPY ./requirements /app/backend/requirements
+RUN pip install -r requirements/development.txt
 
 # Add the rest of the code
 COPY . /app/backend
