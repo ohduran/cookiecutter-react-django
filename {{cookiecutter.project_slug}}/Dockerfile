@@ -10,7 +10,7 @@ RUN apt-get -y install curl \
 WORKDIR /app/backend
 
 # Install Python dependencies
-COPY ./requirements /app/backend/requirements
+COPY ./backend/requirements /app/backend/requirements
 RUN pip install -r requirements/production.txt
 
 # Install JS dependencies

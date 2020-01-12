@@ -1,5 +1,5 @@
 import os
-from hello_world.settings.base import *
+from backend.settings.base import *
 
 SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = False
