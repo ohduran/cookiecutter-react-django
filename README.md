@@ -54,7 +54,7 @@ If you're new to Heroku, their [getting started guide](https://devcenter.heroku.
 3. For environment variables in production, you can set the config variables by running the following command:
 
     ```
-    heroku config:set PRODUCTION_HOST=[app name].herokuapp.com SECRET_KEY=[your secret key DJANGO_SETTINGS_MODULE=backend.settings.production
+    heroku config:set PRODUCTION_HOST=[app name].herokuapp.com SECRET_KEY=[your secret key] DJANGO_SETTINGS_MODULE=backend.settings.production
     ```
 
     You can generate a valid Django Secret Key via [this link](https://miniwebtool.com/django-secret-key-generator/). 
