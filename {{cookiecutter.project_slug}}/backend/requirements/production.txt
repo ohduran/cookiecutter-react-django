@@ -1,0 +1,3 @@
+-r ./base.txt
+
+whitenoise==5.0.1
