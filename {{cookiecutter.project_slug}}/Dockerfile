@@ -1,11 +1,12 @@
+FROM node:latest as build-deps
+WORKDIR /frontend
+COPY ./frontend/package.json ./frontend/yarn.lock ./
+RUN yarn
+COPY ./frontend /frontend
+RUN yarn build
+
 # Use an official Python runtime as a parent image
 FROM python:rc
-
-# Install curl, node, & yarn
-RUN apt-get -y install curl \
-  && curl -sL https://deb.nodesource.com/setup_13.x | bash \
-  && apt-get install nodejs \
-  && curl -o- -L https://yarnpkg.com/install.sh | bash
 
 WORKDIR /app/backend
 
@@ -13,26 +14,12 @@ WORKDIR /app/backend
 COPY ./backend/requirements /app/backend/requirements
 RUN pip install -r requirements/production.txt
 
-# Install JS dependencies
-WORKDIR /app/frontend
+COPY . .
+COPY --from=build-deps /frontend/build /app/frontend/build
 
-COPY ./frontend/package.json ./frontend/yarn.lock /app/frontend/
-RUN $HOME/.yarn/bin/yarn install
-
-# Add the rest of the code
-COPY . /app
-
-# Build static files
-RUN $HOME/.yarn/bin/yarn build
-
-# Have to move all static files other than index.html to root/
-# for whitenoise middleware
 WORKDIR /app/frontend/build
-
 RUN mkdir root && mv *.ico *.js *.json root
-
-# Collect static files
-RUN mkdir /app/backend/staticfiles
+RUN mkdir /app/staticfiles
 
 WORKDIR /app
 
