@@ -14,7 +14,7 @@ MIDDLEWARE.insert(1, "whitenoise.middleware.WhiteNoiseMiddleware")
 
 TEMPLATES[0]["DIRS"] = [os.path.join(BASE_DIR, "../", "frontend", "build")]
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR, "../", "frontend", "build", "static")]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "../", "app", "frontend", "build", "static")]
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
