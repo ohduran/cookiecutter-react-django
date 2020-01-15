@@ -1,5 +1,5 @@
 # Use an official Python runtime as a parent image
-FROM python:3.8.1
+FROM python:rc
 
 # Install curl, node, & yarn
 RUN apt-get -y install curl \
