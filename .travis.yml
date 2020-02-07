@@ -1,6 +1,6 @@
 language: python
 python:
-  - "nightly"  # nightly build
+  - "3.8"
 sudo: true
 
 services:
