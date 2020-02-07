@@ -1,5 +1,6 @@
 -r ./base.txt
 
+django-extensions==2.2.7
 
 pytest==5.3.5
 pytest-cov==2.8.1

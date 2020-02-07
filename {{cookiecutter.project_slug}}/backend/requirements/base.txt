@@ -1,3 +1,5 @@
-# Master branches for Django and DjangoRestFramework
+# Master branches
 https://github.com/django/django/archive/master.tar.gz
 https://github.com/encode/django-rest-framework/archive/master.tar.gz
+
+whitenoise==5.0.1
