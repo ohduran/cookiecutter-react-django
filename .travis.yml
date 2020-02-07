@@ -1,0 +1,11 @@
+sudo: false
+
+services:
+  - docker
+
+script:
+  - pip install cookiecutter invoke==1.2.0
+  - yes | cookiecutter .
+  - docker-compose build
+  - docker-compose run -v "$PWD/shared:/shared" django pytest --cov=./ --cov-report=xml
+  - curl -s https://codecov.io/bash | bash -
