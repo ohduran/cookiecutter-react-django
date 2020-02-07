@@ -1,6 +1,6 @@
 version: "3.7"
 services:
-  backend:
+  django:
     build: ./backend
     volumes:
       - ./backend:/app/backend
@@ -11,7 +11,7 @@ services:
     stdin_open: true
     tty: true
     command: python manage.py runserver 0.0.0.0:8000
-  frontend:
+  react:
     build: ./frontend
     volumes:
       - ./frontend:/app
@@ -22,5 +22,5 @@ services:
     environment:
       - NODE_ENV=development
     depends_on:
-      - backend
+      - django
     command: npm start
