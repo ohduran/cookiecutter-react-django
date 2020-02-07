@@ -31,7 +31,6 @@ def clean(ctx):
         shutil.rmtree(COOKIE)
 
 def _run_docker_compose(ctx, command, *args):
-    os.chdir(COOKIE)
     docker_compose_command = f"docker-compose {command}"
     ctx.run(docker_compose_command, echo=True)
 
