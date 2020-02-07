@@ -47,22 +47,20 @@ If you're new to Heroku, their [getting started guide](https://devcenter.heroku.
     https://one-example-12345.herokuapp.com/ | https://git.heroku.com/one-example-12345.git
     ```
 
-    In this case, ```one-example-12345``` is the name of the app; yours is likely to be different. 
+    In this case, ```one-example-12345``` is the name of the app; yours is likely to be different.
 
 2. Make sure you link the Heroku app with your repository by running ```heroku git:remote -a [app name]```.
-   
+
 3. For environment variables in production, you can set the config variables by running the following command:
 
     ```
     heroku config:set PRODUCTION_HOST=[app name].herokuapp.com SECRET_KEY=[your secret key] DJANGO_SETTINGS_MODULE=backend.settings.production
     ```
 
-    You can generate a valid Django Secret Key via [this link](https://miniwebtool.com/django-secret-key-generator/). 
+    You can generate a valid Django Secret Key via [this link](https://miniwebtool.com/django-secret-key-generator/).
 
-4. Now run ``` heroku stack:set container``` to tell our Heroku app to use Docker.
-   
+4. Now run ```heroku stack:set container``` to tell our Heroku app to use Docker.
+
 5. At this point, you're ready to deploy: run ```git push heroku master```.
-   
+
 6. Checkout https://[app name].herokuapp.com. You should be able to see your web app ready!
-
-
