@@ -6,7 +6,7 @@ function handleSubmit(event) {
   const text = document.querySelector('#char-input').value
 
   axios
-    .get(`/users/char_count?text=${text}`).then(({data}) => {
+    .get(`/commons/char_count?text=${text}`).then(({data}) => {
       document.querySelector('#char-count').textContent = `${data.count} characters!`
     })
     .catch(err => console.log(err))

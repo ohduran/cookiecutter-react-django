@@ -11,3 +11,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "backend",
 ]
+
+INSTALLED_APPS += [
+    'django_extensions',
+]

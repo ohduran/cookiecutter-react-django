@@ -1,3 +1,5 @@
 # Master branches
-git+https://github.com/django/django.git@master#egg=django
-git+https://github.com/encode/django-rest-framework.git@master#egg=djangorestframework
+https://github.com/django/django/archive/master.tar.gz
+https://github.com/encode/django-rest-framework/archive/master.tar.gz
+
+whitenoise==5.0.1
