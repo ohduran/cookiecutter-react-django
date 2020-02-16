@@ -4,10 +4,10 @@ services:
     build: ./backend
     volumes:
       - ./backend:/app/backend
-    environment:
-      - DJANGO_SETTINGS_MODULE=backend.settings.development
     ports:
       - "8000:8000"
+    environment:
+      - DJANGO_SETTINGS_MODULE=backend.settings.development
     stdin_open: true
     tty: true
     command: python manage.py runserver 0.0.0.0:8000
