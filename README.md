@@ -1,4 +1,5 @@
 # Cookiecutter React Django
+[![Build Status](https://travis-ci.com/ohduran/cookiecutter-react-django.svg?branch=master)](https://travis-ci.com/ohduran/cookiecutter-react-django)
 
 Powered by [Cookiecutter](https://github.com/cookiecutter/cookiecutter), Cookiecutter React Django combines the capabilities of Django as a backend service with the flexibility and ease of use of React into an opinionated framework that allows you to jumpstart a production-ready web application.
 
