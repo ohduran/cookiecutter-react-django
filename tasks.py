@@ -21,6 +21,7 @@ REQUIREMENTS = os.path.join(COOKIE, "backend", "requirements", "development.txt"
 @task
 def build(ctx):
     """Build the cookiecutter."""
+    print('Making sure running cookiecutter with this folder works')
     ctx.run(f"cookiecutter {HERE} --no-input")
 
 
@@ -41,6 +42,6 @@ def _build_production_image(ctx):
 def test(ctx):
     """Run lint commands and tests."""
     os.chdir(COOKIE)
-    _run_docker_compose(ctx, "build django")
+    _run_docker_compose(ctx, "build")
     _run_docker_compose(ctx, "run --rm django pytest")
     _build_production_image(ctx)
