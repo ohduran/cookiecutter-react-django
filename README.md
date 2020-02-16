@@ -1,4 +1,5 @@
 # Cookiecutter React Django
+[![Build Status](https://travis-ci.com/ohduran/cookiecutter-react-django.svg?branch=master)](https://travis-ci.com/ohduran/cookiecutter-react-django)
 
 Powered by [Cookiecutter](https://github.com/cookiecutter/cookiecutter), Cookiecutter React Django combines the capabilities of Django as a backend service with the flexibility and ease of use of React into an opinionated framework that allows you to jumpstart a production-ready web application.
 
@@ -12,14 +13,7 @@ Powered by [Cookiecutter](https://github.com/cookiecutter/cookiecutter), Cookiec
 
 - __Heroku ready__: Create an app, set up the configuration and deploy.
 
-## Contributing
-
-To learn more about contributing, please read [our contributing docs](/CONTRIBUTING.md).
-
-## Usage
-
-###### This project is based on a series of tutorials written by [Craig Franklin](https://github.com/cfranklin11) called [Creating an app with Docker Compose, Django, and Create React App](https://dev.to/englishcraig/creating-an-app-with-docker-compose-django-and-create-react-app-31lf).
-
+## Local setup
 Let's assume that you want to create a project called "hello_world", one that makes a separation between a React-based front end and a Django-based backend, all set up locally using Docker and production ready in Heroku.
 
 Most tutorials will give you a partial solution, so the only way is painstakingly piecing together a solution from multiple guides/tutorials that did some aspect of what you want without covering the whole.
@@ -35,6 +29,24 @@ Now run it against this repo:
 ```$ cookiecutter https://github.com/ohduran/cookiecutter-react-django```
 
 You'll be prompted for some values. Provide them, then the project will be created for you.
+
+Now, on your terminal, simply do `docker-compose up --build`, and wait for the containers to build. Eventually, you'll be able to see the index page by going to `[http://127.0.0.1/](http://127.0.0.1/)`:
+
+You will be able to see the following:
+
+![Index Demo](/index-demo.png)
+
+Write something on that box over there, it will get you the number of characters via your Django API!
+
+![API Demo](/api-demo.png)
+
+## Contributing
+
+To learn more about contributing, please read [our contributing docs](/CONTRIBUTING.md).
+
+## Usage
+
+###### This project is based on a series of tutorials written by [Craig Franklin](https://github.com/cfranklin11) called [Creating an app with Docker Compose, Django, and Create React App](https://dev.to/englishcraig/creating-an-app-with-docker-compose-django-and-create-react-app-31lf).
 
 ### Deploy to Heroku
 
