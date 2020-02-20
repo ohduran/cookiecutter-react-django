@@ -69,7 +69,7 @@ If you're new to Heroku, their [getting started guide](https://devcenter.heroku.
     heroku config:set PRODUCTION_HOST=[app name].herokuapp.com SECRET_KEY=[your secret key] DJANGO_SETTINGS_MODULE=backend.settings.production
     ```
 
-    You can generate a valid Django Secret Key via [this link](https://miniwebtool.com/django-secret-key-generator/).
+    You can generate a valid Django Secret Key via [this link](https://miniwebtool.com/django-secret-key-generator/). REMEMBER to put the key between apostrophes ('), or you will likely get a `-bash: ****: event not found`
 
 4. Now run ```heroku stack:set container``` to tell our Heroku app to use Docker.
 
