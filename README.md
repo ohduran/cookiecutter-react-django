@@ -30,7 +30,7 @@ Now run it against this repo:
 
 You'll be prompted for some values. Provide them, then the project will be created for you.
 
-Now, on your terminal, simply do `docker-compose up --build`, and wait for the containers to build. Eventually, you'll be able to see the index page by going to `[http://127.0.0.1/](http://127.0.0.1/)`:
+Now, on your terminal, simply do `docker-compose up --build`, and wait for the containers to build. Eventually, you'll be able to see the index page by going to [`http://127.0.0.1/`](http://127.0.0.1/):
 
 You will be able to see the following:
 
