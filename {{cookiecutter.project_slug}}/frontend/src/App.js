@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import axios from 'axios';
 import './App.css';
 
+require('dotenv').config()
+
 function handleSubmit(event) {
   const text = document.querySelector('#char-input').value
 
