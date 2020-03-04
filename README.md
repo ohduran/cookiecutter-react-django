@@ -30,7 +30,7 @@ Now run it against this repo:
 
 You'll be prompted for some values. Provide them, then the project will be created for you.
 
-Now, on your terminal, simply do `docker-compose up --build`, and wait for the containers to build. Eventually, you'll be able to see the index page by going to `[http://127.0.0.1/](http://127.0.0.1/)`:
+Now, on your terminal, simply do `docker-compose up --build`, and wait for the containers to build. Eventually, you'll be able to see the index page by going to [`http://127.0.0.1/`](http://127.0.0.1/):
 
 You will be able to see the following:
 
@@ -69,7 +69,7 @@ If you're new to Heroku, their [getting started guide](https://devcenter.heroku.
     heroku config:set PRODUCTION_HOST=[app name].herokuapp.com SECRET_KEY=[your secret key] DJANGO_SETTINGS_MODULE=backend.settings.production
     ```
 
-    You can generate a valid Django Secret Key via [this link](https://miniwebtool.com/django-secret-key-generator/).
+    You can generate a valid Django Secret Key via [this link](https://miniwebtool.com/django-secret-key-generator/). REMEMBER to put the key between apostrophes ('), or you will likely get a `-bash: ****: event not found`
 
 4. Now run ```heroku stack:set container``` to tell our Heroku app to use Docker.
 
