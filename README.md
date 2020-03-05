@@ -1,4 +1,5 @@
 # Cookiecutter React Django
+
 [![Build Status](https://travis-ci.com/ohduran/cookiecutter-react-django.svg?branch=master)](https://travis-ci.com/ohduran/cookiecutter-react-django)
 
 Powered by [Cookiecutter](https://github.com/cookiecutter/cookiecutter), Cookiecutter React Django combines the capabilities of Django as a backend service with the flexibility and ease of use of React into an opinionated framework that allows you to jumpstart a production-ready web application.
@@ -14,6 +15,7 @@ Powered by [Cookiecutter](https://github.com/cookiecutter/cookiecutter), Cookiec
 - __Heroku ready__: Create an app, set up the configuration and deploy.
 
 ## Local setup
+
 Let's assume that you want to create a project called "hello_world", one that makes a separation between a React-based front end and a Django-based backend, all set up locally using Docker and production ready in Heroku.
 
 Most tutorials will give you a partial solution, so the only way is painstakingly piecing together a solution from multiple guides/tutorials that did some aspect of what you want without covering the whole.
@@ -42,7 +44,7 @@ Write something on that box over there, it will get you the number of characters
 
 ## Contributing
 
-To learn more about contributing, please read [our contributing docs](/CONTRIBUTING.md).
+To learn more about contributing, please read [our contributing docs](https://github.com/ohduran/cookiecutter-react-django/blob/master/CONTRIBUTING.md).
 
 ## Usage
 
@@ -52,7 +54,7 @@ To learn more about contributing, please read [our contributing docs](/CONTRIBUT
 
 If you're new to Heroku, their [getting started guide](https://devcenter.heroku.com/articles/getting-started-with-python) will walk you through the basics of creating a generic, non-dockerized Python app. If you don’t have it yet, install the [Heroku CLI](https://devcenter.heroku.com/articles/getting-started-with-python#set-up).
 
-1. We can create a Heroku app by running ``` heroku create ``` within our project. Once you've done it, Heroku will provide you with the following message:
+1. We can create a Heroku app by running ```heroku create``` within our project. Once you've done it, Heroku will provide you with the following message:
 
     ```
     Creating app... done, ⬢ one-example-12345
