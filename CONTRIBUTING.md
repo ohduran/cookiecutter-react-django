@@ -100,6 +100,10 @@ It's best for everyone involved if you run the tests before submitting PRs, give
 
 Submit all changes directly to the master branch. It's just easier for everyone.
 
+### Dependency Upgrades
+
+If you noticed that any library dependency is outdated, we encourage you to submit a PR with the necessary changes. It's one of team's priority to always run on the latest version possible of third party libraries.
+
 ## License
 
 By contributing to Cookiecutter React Django, you agree that your contributions will be licensed under its [License](https://github.com/ohduran/cookiecutter-react-django/blob/master/LICENSE).
