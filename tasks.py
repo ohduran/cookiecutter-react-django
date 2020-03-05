@@ -44,4 +44,5 @@ def test(ctx):
     os.chdir(COOKIE)
     _run_docker_compose(ctx, "build")
     _run_docker_compose(ctx, "run --rm django pytest")
+    _run_docker_compose(ctx, 'run --rm react bash -c "CI=true npm test"')
     _build_production_image(ctx)
