@@ -39,11 +39,11 @@ Now, on your terminal, simply do `docker-compose up --build`, and wait for the c
 
 You will be able to see the following:
 
-![Index Demo](/index-demo.png)
+![Index Demo](docs/_static/index-demo.png)
 
 Write something on that box over there, it will get you the number of characters via your Django API!
 
-![API Demo](/api-demo.png)
+![API Demo](docs/_static/api-demo.png)
 
 ## Contributing
 
