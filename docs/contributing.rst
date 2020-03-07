@@ -69,7 +69,7 @@ Testing
 
   *Once I got a suite of tests to pass, I would make sure that those tests were convenient to run for anyone else who needed to work with the code. I would ensure that the tests and the code were checked in together into the same source package.*
 
-  —  Robert 'Uncle Bob' Martin_
+  —  Robert 'Uncle Bob' Martin
 
 
 Tests on this project are run with `Jest <https://jestjs.io/>`_, for the React front-end, and `pytest <https://docs.pytest.org/en/latest/>`_, for the Django back-end.
