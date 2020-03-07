@@ -46,7 +46,7 @@ Some tips on good issue reporting
 
 * When describing an issue, phrase your ticket in terms of the *behaviour* that needs changing, rather than the code.
 * Before submitting a ticket, have you searched for similar ones? Has a conversation about a problem similar to yours already started?
-* If reporting a bug, it would be great if you can include a *failing test case*. That will make the conversation revolve around code, and will allow for the ticket to have boundaries that make it solvable faster. Mozilla has [bug reporting guidelines](https://developer.mozilla.org/en-US/docs/Mozilla/QA/Bug_writing_guidelines) that we believe hint adequately how bugs should be reported, but feel empowered to think critically about any of them if you think there's a way to do it better.
+* If reporting a bug, it would be great if you can include a *failing test case*. That will make the conversation revolve around code, and will allow for the ticket to have boundaries that make it solvable faster. Mozilla has `bug reporting guidelines <https://developer.mozilla.org/en-US/docs/Mozilla/QA/Bug_writing_guidelines>`_ that we believe hint adequately how bugs should be reported, but feel empowered to think critically about any of them if you think there's a way to do it better.
 * Closing an issue doesn't necessarily mean the end of a discussion.  If you believe your issue has been closed incorrectly, explain why and we'll consider if it needs to be reopened.
 
 Security Bugs
