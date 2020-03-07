@@ -48,7 +48,7 @@ Write something on that box over there, it will get you the number of characters
 
 ## Contributing
 
-To learn more about contributing, please read [our contributing docs](https://github.com/ohduran/cookiecutter-react-django/blob/master/CONTRIBUTING.md).
+To learn more about contributing, please read [our contributing docs](https://cookiecutter-react-django.readthedocs.io/en/latest/contributing.html).
 
 ## Usage
 
