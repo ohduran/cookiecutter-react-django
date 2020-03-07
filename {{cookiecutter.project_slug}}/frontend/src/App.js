@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import axios from 'axios';
 import './App.css';
 
+require('dotenv').config()
+
 function handleSubmit(event) {
   const text = document.querySelector('#char-input').value
 
@@ -22,11 +24,11 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <div>
-        <label htmlFor='char-input'>How many characters does</label>
-        <input id='char-input' type='text' />
+        <label htmlFor='char-input'>How many characters does </label>
+        <input id='char-input' type='text' placeholder="my string"/><span> </span>
         <button onClick={handleSubmit}>have?</button>
         <div>
-          <h3 id='char-count'> </h3>
+          <h3 id='char-count' data-testid="char-count"> </h3>
         </div>
       </div>
       </header>

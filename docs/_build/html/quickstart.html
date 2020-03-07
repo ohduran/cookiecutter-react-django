@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Quickstart &#8212; Cookiecutter React Django  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Deployment" href="deployment.html" />
+    <link rel="prev" title="Foreword" href="foreword.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="quickstart">
+<span id="id1"></span><h1>Quickstart<a class="headerlink" href="#quickstart" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="local-setup-with-docker">
+<h2>Local setup with Docker<a class="headerlink" href="#local-setup-with-docker" title="Permalink to this headline">¶</a></h2>
+<p>Let’s assume that you want to create a project called “hello_world”, one that makes a separation between a React-based front end and a Django-based backend, all set up locally using Docker and production ready in Heroku.</p>
+<p>Most tutorials will give you a partial solution, so the only way is painstakingly piecing together a solution from multiple guides/tutorials that did some aspect of what you want without covering the whole.</p>
+<blockquote>
+<div><p><em>Side projects don’t exactly require optimal productivity, but, unlike jobs, if they become a pain to work on, it’s pretty easy to just quit.</em></p>
+</div></blockquote>
+<p>Instead, we can do as follows. First, get Cookiecutter. Trust me, it’s awesome:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">pip</span> <span class="pre">install</span> <span class="pre">&quot;cookiecutter&gt;=1.7.0&quot;</span></code></p>
+<p>Now run it against this repo:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cookiecutter</span> <span class="pre">https://github.com/ohduran/cookiecutter-react-django</span></code></p>
+<p>You’ll be prompted for some values. Provide them, then the project will be created for you.</p>
+<p>Now, on your terminal, simply do docker-compose up –build, and wait for the containers to build. Eventually, you’ll be able to see the index page by going to <a class="reference external" href="http://127.0.0.1/">http://127.0.0.1/</a></p>
+<p>You will be able to see the following:</p>
+<a class="reference external image-reference" href="_static/index-demo.png"><img alt="_images/index-demo.png" src="_images/index-demo.png" /></a>
+<p>Write something on that box over there, it will get you the number of characters via your Django API!</p>
+<a class="reference external image-reference" href="_static/api-demo.png"><img alt="_images/api-demo.png" src="_images/api-demo.png" /></a>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Cookiecutter React Django</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="foreword.html">Foreword</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Quickstart</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#local-setup-with-docker">Local setup with Docker</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="deployment.html">Deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="security.html">Security</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="foreword.html" title="previous chapter">Foreword</a></li>
+      <li>Next: <a href="deployment.html" title="next chapter">Deployment</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Alvaro Duran.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.4.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/quickstart.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

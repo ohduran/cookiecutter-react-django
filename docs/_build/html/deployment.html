@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Deployment &#8212; Cookiecutter React Django  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Contributing" href="contributing.html" />
+    <link rel="prev" title="Quickstart" href="quickstart.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="deployment">
+<span id="id1"></span><h1>Deployment<a class="headerlink" href="#deployment" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="deployment-with-heroku">
+<h2>Deployment with Heroku<a class="headerlink" href="#deployment-with-heroku" title="Permalink to this headline">¶</a></h2>
+<p>If you’re new to Heroku, their <a class="reference external" href="https://devcenter.heroku.com/articles/getting-started-with-python">getting started guide</a> will walk you through the basics of creating a generic, non-dockerized Python app. If you don’t have it yet, install the <a class="reference external" href="https://devcenter.heroku.com/articles/getting-started-with-python#set-up">Heroku CLI</a>.</p>
+<ol class="arabic">
+<li><p>We can create a Heroku app by running <code class="docutils literal notranslate"><span class="pre">heroku</span> <span class="pre">create</span></code> within our project. Once you’ve done it, Heroku will provide you with the following message:</p>
+<blockquote>
+<div><p>``
+Creating app… done, ⬢ one-example-12345
+<a class="reference external" href="https://one-example-12345.herokuapp.com/">https://one-example-12345.herokuapp.com/</a> | <a class="reference external" href="https://git.heroku.com/one-example-12345.git">https://git.heroku.com/one-example-12345.git</a>
+``</p>
+<p>In this case, <code class="docutils literal notranslate"><span class="pre">one-example-12345</span></code> is the name of the app; yours is likely to be different.</p>
+</div></blockquote>
+</li>
+<li><p>Make sure you link the Heroku app with your repository by running <code class="docutils literal notranslate"><span class="pre">heroku</span> <span class="pre">git:remote</span> <span class="pre">-a</span> <span class="pre">[app_name]</span></code>.</p></li>
+<li><p>For environment variables in production, you can set the config variables by running the following command:</p></li>
+</ol>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">heroku</span> <span class="pre">config:set</span> <span class="pre">PRODUCTION_HOST=[app_name].herokuapp.com</span> <span class="pre">SECRET_KEY=[your</span> <span class="pre">secret</span> <span class="pre">key]</span> <span class="pre">DJANGO_SETTINGS_MODULE=backend.settings.production</span></code></p>
+<p>You can generate a valid Django Secret Key via <a class="reference external" href="https://miniwebtool.com/django-secret-key-generator/">this link</a>. REMEMBER to put the key between apostrophes (‘), or you will likely get a <code class="docutils literal notranslate"><span class="pre">-bash:</span> <span class="pre">****:</span> <span class="pre">event</span> <span class="pre">not</span> <span class="pre">found</span></code> error.</p>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p>Now run <code class="docutils literal notranslate"><span class="pre">heroku</span> <span class="pre">stack:set</span> <span class="pre">container</span></code> to tell our Heroku app to use Docker.</p></li>
+<li><p>At this point, you’re ready to deploy: run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">heroku</span> <span class="pre">master</span></code>.</p></li>
+<li><p>Checkout <a class="reference external" href="https://[app_name].herokuapp.com">https://[app_name].herokuapp.com</a>. You should be able to see your web app ready!</p></li>
+</ol>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Cookiecutter React Django</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="foreword.html">Foreword</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Deployment</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#deployment-with-heroku">Deployment with Heroku</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="security.html">Security</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="quickstart.html" title="previous chapter">Quickstart</a></li>
+      <li>Next: <a href="contributing.html" title="next chapter">Contributing</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Alvaro Duran.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.4.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/deployment.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

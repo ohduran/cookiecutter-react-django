@@ -4,6 +4,7 @@ services:
     build: ./backend
     volumes:
       - ./backend:/app/backend
+      - ./docs:/app/docs
     ports:
       - "8000:8000"
     environment:
