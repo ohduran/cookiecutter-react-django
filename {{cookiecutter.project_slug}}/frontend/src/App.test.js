@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, fireEvent, waitForElement } from '@testing-library/react';
+import { render, fireEvent, wait } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import App from './App';
 import axiosMock from 'axios';
@@ -17,11 +17,11 @@ test('on calling char_count it renders the number of characters', async () => {
 
   const charInputElement = getByPlaceholderText("my string");
   expect(charInputElement).toBeInTheDocument();
-  
+
   fireEvent.change(charInputElement, { target: { value: testString } });
   fireEvent.click(getByText('have?'));
-  const responseTextNode = await waitForElement(() => getByTestId('char-count'));
-  
+  const responseTextNode = await wait(() => getByTestId('char-count'));
+
   expect(axiosMock.get).toHaveBeenCalledTimes(1)
   expect(axiosMock.get).toHaveBeenCalledWith(url)
   expect(getByTestId('char-count')).toHaveTextContent(`${testString.length} characters!`)
