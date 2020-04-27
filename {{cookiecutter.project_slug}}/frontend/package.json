@@ -11,8 +11,8 @@
     "dotenv": "8.2.0",
     "eslint-config-react-app": "5.2.0",
     "eslint-plugin-flowtype": "4.6.0",
-    "react": "16.13.0",
-    "react-dom": "16.13.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
     "react-scripts": "3.4.1",
     "typescript": "3.8.3"
   },
