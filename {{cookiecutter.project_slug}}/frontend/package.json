@@ -6,7 +6,7 @@
   "dependencies": {
     "@testing-library/jest-dom": "5.5.0",
     "@testing-library/react": "9.5.0",
-    "@testing-library/user-event": "10.1.2",
+    "@testing-library/user-event": "10.2.4",
     "axios": "0.19.2",
     "dotenv": "8.2.0",
     "eslint-config-react-app": "5.2.1",
