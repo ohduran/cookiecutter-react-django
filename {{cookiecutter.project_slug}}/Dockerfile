@@ -3,7 +3,7 @@ FROM python:rc
 
 # Install curl, node, & yarn
 RUN apt-get -y install curl \
-  && curl -sL https://deb.nodesource.com/setup_13.x | bash \
+  && curl -sL https://deb.nodesource.com/setup_14.x | bash \
   && apt-get install nodejs \
   && curl -o- -L https://yarnpkg.com/install.sh | bash
 
