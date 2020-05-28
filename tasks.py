@@ -28,6 +28,7 @@ def build(ctx):
 @task
 def clean(ctx):
     """Clean out generated cookiecutter."""
+    print('Cleaning out the generated cookiecutter')
     if os.path.exists(COOKIE):
         shutil.rmtree(COOKIE)
 
@@ -36,6 +37,7 @@ def _run_docker_compose(ctx, command, *args):
     ctx.run(docker_compose_command, echo=True)
 
 def _build_production_image(ctx):
+    print('Building production image')
     ctx.run("docker build -t production:latest .")
 
 @task(pre=[clean, build])
@@ -44,5 +46,6 @@ def test(ctx):
     os.chdir(COOKIE)
     _run_docker_compose(ctx, "build")
     _run_docker_compose(ctx, "run --rm django pytest")
+    _run_docker_compose(ctx, 'run --rm react bash -c "node --version"')
     _run_docker_compose(ctx, 'run --rm react bash -c "CI=true npm test"')
     _build_production_image(ctx)
