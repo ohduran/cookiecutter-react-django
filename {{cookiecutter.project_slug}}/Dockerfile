@@ -16,7 +16,7 @@ RUN pip install -r requirements/production.txt
 # Install JS dependencies
 WORKDIR /app/frontend
 
-COPY ./frontend/package.json ./frontend/yarn.lock /app/frontend/
+COPY ./frontend/package.json /app/frontend/
 RUN $HOME/.yarn/bin/yarn install
 
 # Add the rest of the code
