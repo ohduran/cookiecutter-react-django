@@ -4,7 +4,7 @@ FROM node:latest
 WORKDIR /app/
 
 # Install dependencies
-COPY package.json yarn.lock /app/
+COPY package.json /app/
 
 RUN npm install
 
