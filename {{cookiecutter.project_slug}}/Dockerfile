@@ -1,6 +1,6 @@
 FROM node:latest as build-deps
 WORKDIR /frontend
-COPY ./frontend/package.json ./frontend/yarn.lock ./
+COPY ./frontend/package.json ./
 RUN yarn
 COPY ./frontend /frontend
 RUN yarn build
