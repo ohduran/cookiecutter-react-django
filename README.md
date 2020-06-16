@@ -21,11 +21,11 @@ Powered by [Cookiecutter](https://github.com/cookiecutter/cookiecutter), Cookiec
 
 Let's assume that you want to create a project called "hello_world", one that makes a separation between a React-based front end and a Django-based backend, all set up locally using Docker and production ready in Heroku.
 
-Most tutorials will give you a partial solution, so the only way is painstakingly piecing together a solution from multiple guides/tutorials that did some aspect of what you want without covering the whole.
+Most tutorials will give you a partial solution, so the only way is painstakingly piecing it together from multiple guides/tutorials that did some aspect of what you want without covering the whole.
 
 > Side projects don't exactly require optimal productivity, but, unlike jobs, if they become a pain to work on, it's pretty easy to just quit.
 
-Instead, we can do as follows. First, get Cookiecutter. Trust me, it's awesome:
+Instead, we can do as follows. First, get Cookiecutter:
 
 ```$ pip install "cookiecutter>=1.7.0" ```
 
