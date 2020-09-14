@@ -7,7 +7,7 @@
     "@testing-library/jest-dom": "5.11.3",
     "@testing-library/react": "11.0.4",
     "@testing-library/user-event": "10.3.5",
-    "@testing-library/user-event": "12.1.1",
+    "@testing-library/user-event": "12.1.4",
     "axios": "0.19.2",
     "dotenv": "8.2.0",
     "eslint-config-react-app": "5.2.1",
