@@ -12,4 +12,4 @@ Faker==4.1.0
 ipdb==0.13.3
 freezegun==1.0.0
 
-Sphinx==3.0.4
+Sphinx==3.2.1
