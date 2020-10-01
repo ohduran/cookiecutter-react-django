@@ -9,7 +9,7 @@ pytest-mock==3.3.1
 
 Faker==4.1.4
 factory_boy==3.0.1
-ipdb==0.13.3
+ipdb==0.13.4
 freezegun==1.0.0
 
 Sphinx==3.2.1
