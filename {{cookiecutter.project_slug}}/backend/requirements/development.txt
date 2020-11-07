@@ -8,7 +8,7 @@ pytest-django==4.1.0
 pytest-mock==3.3.1
 
 ipdb==0.13.4
-Faker==4.14.0
+Faker==4.14.2
 factory_boy==3.1.0
 freezegun==1.0.0
 
