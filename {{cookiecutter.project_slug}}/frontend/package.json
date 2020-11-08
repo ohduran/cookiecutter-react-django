@@ -4,17 +4,18 @@
   "proxy": "http://django:8000",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "5.11.4",
-    "@testing-library/react": "11.1.0",
-    "@testing-library/user-event": "12.1.10",
     "axios": "0.20.0",
+    "@testing-library/jest-dom": "5.11.5",
+    "@testing-library/react": "11.1.1",
+    "@testing-library/user-event": "10.3.5",
+    "@testing-library/user-event": "12.2.0",
     "dotenv": "8.2.0",
     "eslint-config-react-app": "6.0.0",
     "eslint-plugin-flowtype": "5.2.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-scripts": "3.4.4",
-    "typescript": "4.0.3"
+    "typescript": "4.0.5"
   },
   "scripts": {
     "start": "react-scripts start",
