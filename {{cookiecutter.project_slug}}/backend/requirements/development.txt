@@ -5,7 +5,7 @@ django-extensions==3.1.0
 pytest-cov==2.11.0
 pytest==6.2.2
 pytest-django==4.1.0
-pytest-mock==3.5.0
+pytest-mock==3.5.1
 
 ipdb==0.13.4
 Faker==5.8.0
