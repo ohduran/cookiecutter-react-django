@@ -5,8 +5,8 @@
   "private": true,
   "dependencies": {
     "axios": "0.21.1",
+    "@testing-library/react": "11.2.3",
     "@testing-library/jest-dom": "5.11.9",
-    "@testing-library/react": "11.2.2",
     "@testing-library/user-event": "10.3.5",
     "@testing-library/user-event": "12.6.3",
     "dotenv": "8.2.0",
