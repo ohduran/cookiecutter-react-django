@@ -8,7 +8,7 @@
     "@testing-library/react": "11.2.3",
     "@testing-library/jest-dom": "5.11.9",
     "@testing-library/user-event": "10.3.5",
-    "@testing-library/user-event": "12.7.1",
+    "@testing-library/user-event": "12.7.2",
     "dotenv": "8.2.0",
     "eslint-config-react-app": "6.0.0",
     "eslint-plugin-flowtype": "5.2.2",
