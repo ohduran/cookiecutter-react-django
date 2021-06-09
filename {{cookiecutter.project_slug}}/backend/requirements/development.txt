@@ -2,14 +2,14 @@
 
 django-extensions==3.1.3
 
-pytest-cov==2.12.0
+pytest-cov==2.12.1
 pytest==6.2.4
 pytest-django==4.3.0
 pytest-mock==3.6.1
 
-ipdb==0.13.8
-Faker==8.4.0
+Faker==8.6.0
+ipdb==0.13.9
 factory_boy==3.2.0
 freezegun==1.1.0
 
-Sphinx==4.0.1
+Sphinx==4.0.2
