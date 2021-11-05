@@ -4,7 +4,7 @@
   "proxy": "http://django:8000",
   "private": true,
   "dependencies": {
-    "axios": "0.21.1",
+    "axios": "0.21.2",
     "@testing-library/react": "11.2.7",
     "@testing-library/jest-dom": "5.12.0",
     "@testing-library/user-event": "10.3.5",

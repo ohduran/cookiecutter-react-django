@@ -14,6 +14,8 @@ services:
     command: python manage.py runserver 0.0.0.0:8000
   react:
     build: ./frontend
+    stdin_open: true
+    tty: true
     volumes:
       - ./frontend:/app
       # One-way volume to use node_modules from inside image
