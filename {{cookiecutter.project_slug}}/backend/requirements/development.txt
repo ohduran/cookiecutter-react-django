@@ -7,7 +7,7 @@ pytest-cov==3.0.0
 pytest-django==4.5.1
 pytest-mock==3.6.1
 
-Faker==9.9.0
+Faker==13.3.5
 ipdb==0.13.9
 factory_boy==3.2.1
 freezegun==1.1.0
