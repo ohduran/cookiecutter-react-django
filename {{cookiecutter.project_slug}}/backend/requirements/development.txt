@@ -12,4 +12,4 @@ ipdb==0.13.9
 factory_boy==3.2.1
 freezegun==1.2.1
 
-Sphinx==5.0.2
+Sphinx==5.2.3
