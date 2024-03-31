@@ -17,6 +17,10 @@ Powered by [Cookiecutter](https://github.com/cookiecutter/cookiecutter), Cookiec
 
 - __Heroku ready__: Create an app, set up the configuration and deploy.
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ohduran/cookiecutter-react-django&type=Date)](https://star-history.com/#ohduran/cookiecutter-react-django&Date)
+
 ## Local setup
 
 Let's assume that you want to create a project called "hello_world", one that makes a separation between a React-based front end and a Django-based backend, all set up locally using Docker and production ready in Heroku.
